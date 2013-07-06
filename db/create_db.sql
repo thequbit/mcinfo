@@ -18,5 +18,7 @@ streetid int not null auto_increment primary key,
 rawname varchar(127) not null,
 name varchar(127) not null,
 type varchar(63) not null
+communityid int not null,
+foreign key (communityid) references communities(communityid)
 );
 
