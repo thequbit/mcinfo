@@ -36,5 +36,5 @@ county varchar(256) not null,
 fullstate varchar(256) not null,
 stateabiv varchar(8) not null,
 lat double not null,
-lng double not null,
+lng double not null
 );
