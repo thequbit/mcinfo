@@ -10,14 +10,14 @@ use mcinfodb;
 create table communities(
 communityid int not null auto_increment primary key,
 name varchar(127) not null,
-hrid int not
+hrid int not null
 );
 
 create table streets(
 streetid int not null auto_increment primary key,
 rawname varchar(127) not null,
 name varchar(127) not null,
-type varchar(63) not null
+streettype varchar(63) not null,
 communityid int not null,
 foreign key (communityid) references communities(communityid)
 );
